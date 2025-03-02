@@ -8,7 +8,7 @@ const resultImages = document.querySelector(".result-cat-images");
 // Create an error message container at the top
 const errorMessage = document.createElement("p");
 errorMessage.classList.add("error-message");
-errorMessage.style.fontSize:15px;
+errorMessage.style.fontSize:25px;
 errorMessage.style.color = "red";
 errorMessage.style.textAlign = "center";
 errorMessage.style.fontWeight = "bold";
