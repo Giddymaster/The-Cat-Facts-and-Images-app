@@ -8,6 +8,7 @@ const resultImages = document.querySelector(".result-cat-images");
 // Create an error message container at the top
 const errorMessage = document.createElement("p");
 errorMessage.classList.add("error-message");
+errorMessage.style.fontSize:15px;
 errorMessage.style.color = "red";
 errorMessage.style.textAlign = "center";
 errorMessage.style.fontWeight = "bold";
@@ -17,7 +18,7 @@ quoteButton.onclick = async function fetchMeowFacts() {
     let maxFacts = parseInt(factInput.value);
 
     if (!factInput.value) {
-        errorMessage.textContent = "Please enter the number of cat facts you want. Showing 1 by default.";
+        errorMessage.textContent = "Please enter the number of cat facts you want.";
         maxFacts = 1; // Show 1 fact by default
     } else {
         errorMessage.textContent = ""; // Clear error if input is valid
@@ -51,7 +52,7 @@ catButton.onclick = async function fetchCatImages() {
     let maxImages = parseInt(imageInput.value);
 
     if (!imageInput.value) {
-        errorMessage.textContent = "Please enter the number of cat images you want. Showing 1 by default.";
+        errorMessage.textContent = "Please enter the number of cat images you want.";
         maxImages = 1; // Show 1 image by default
     } else {
         errorMessage.textContent = ""; // Clear error if input is valid
